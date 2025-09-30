@@ -2,7 +2,7 @@
 ![Early Access](https://img.shields.io/badge/status-early%20access-orange)
 ![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-coming%20soon-yellow)
 ![RouterOS](https://img.shields.io/badge/RouterOS-7.20-green)
-# RouterOS Dark Mode Extension
+# Mikrotik RouterOS Dark Mode Extension
 
 ![Screenshot](./github/screenshot.png)
 
