@@ -1,41 +1,12 @@
+![Version](https://img.shields.io/badge/version-7.20.0-blue)
+![Early Access](https://img.shields.io/badge/status-early%20access-orange)
+![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-coming%20soon-yellow)
+![RouterOS](https://img.shields.io/badge/RouterOS-7.20-green)
 # RouterOS Dark Mode Extension
 
+![Screenshot](./github/screenshot.png)
+
 Chrome extension that applies a dark theme to the MikroTik RouterOS (WebFig) web interface.
-
-## Project Structure
-
-```
-.
-├── package.json
-├── rollup.config.js
-├── tsconfig.json
-├── src/
-│   ├── manifest.json
-│   ├── assets/
-│   │   └── icons/
-│   │       ├── icon16.png          # Placeholder – replace with real PNG asset
-│   │       ├── icon32.png          # Placeholder – replace with real PNG asset
-│   │       ├── icon48.png          # Placeholder – replace with real PNG asset
-│   │       └── icon128.png         # Placeholder – replace with real PNG asset
-│   ├── background/
-│   │   └── serviceWorker.ts        # Stub for future background logic
-│   ├── content/
-│   │   ├── index.ts                # Entry point, handles theme bootstrapping
-│   │   ├── injectTheme.ts          # Stylesheet injection helpers
-│   │   └── titleObserver.ts        # Observes title changes to re-apply theme
-│   ├── styles/
-│   │   ├── routeros-dark.scss      # SCSS build entry point
-│   │   ├── _variables.scss         # Theme tokens
-│   │   ├── _mixins.scss            # Shared mixins
-│   │   ├── base.scss               # Global base overrides
-│   │   └── components/             # Component-specific overrides
-│   │       ├── navigation.scss
-│   │       ├── tables.scss
-│   │       └── dialogs.scss
-│   └── types/
-│       └── static.d.ts             # Style module declarations
-└── dist/                           # Generated output (after build)
-```
 
 ## Prerequisites
 
