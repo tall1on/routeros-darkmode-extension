@@ -3,9 +3,10 @@ body.mikrotik-ros {
     --bg-medium: #222427 !important;
     --bg-bright: #2f3439 !important;
     --white: #2f3439 !important;
-    --dark-green : white;
-
     --body-color: white;
+    --dark-green : white;
+    --green: white;
+
     color: var(--body-color);
 
     .icon {
@@ -36,7 +37,7 @@ body.mikrotik-ros {
         color: white;
     }
 
-    input[type="text"], input[type="password"], input[type="search"], textarea, .combobox button {
+    input[type="text"], input[type="password"], input[type="search"], textarea, .combobox button, select {
         color: white;
     }
 
@@ -50,5 +51,35 @@ body.mikrotik-ros {
         background-color: #ff4d4f; /* red background */
         color: white;               /* text color */
         border: 1px solid #ff4d4f; /* optional border to match */
+    }
+
+    .modal::backdrop {
+        background-color: rgb(66 120 138 / 50%);
+    }
+
+    @keyframes antimate-focusflash {
+        0% {
+            box-shadow: 0 0 0.5rem 0.25rem rgba(0, 123, 255, 0); /* transparent blue */
+        }
+        50% {
+            box-shadow: 0 0 0.5rem 0.25rem rgba(0, 123, 255, 0.25); /* semi-transparent blue */
+        }
+        100% {
+            box-shadow: 0 0 0.5rem 0.25rem rgba(0, 123, 255, 0); /* transparent blue */
+        }
+    }
+
+    input[type="checkbox"].switch {
+        border-color: var(--bg-bright);
+        background-color: var(--bg-bright);
+
+        &::after {
+            background-color: white;
+        }
+    }
+
+    input[type="checkbox"].switch:checked, input[type="checkbox"].switch:checked:focus, input[type="checkbox"].switch:checked:hover, input[type="checkbox"].switch:checked:focus:hover {
+        border-color: lightgreen;
+        background-color: lightgreen;
     }
 }
