@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+    "name": "RouterOS Dark Mode",
+    "description": "Applies a dark theme to the Mikrotik RouterOS web interface.",
+    "version": "0.1.0",
+    "icons": {
+        "16": "assets/icons/icon16.png",
+        "32": "assets/icons/icon32.png",
+        "48": "assets/icons/icon48.png",
+        "128": "assets/icons/icon128.png"
+    },
+    "action": {
+        "default_title": "RouterOS Dark Mode"
+    },
+    "background": {
+        "service_worker": "background/serviceWorker.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/",
+                "*://*/index.html*",
+                "*://*/webfig*",
+                "*://*/webfig/*",
+                "*://*/webfig/index.html*"
+            ],
+            "js": [
+                "content/index.js"
+            ],
+            "css": [
+                "content/css/routeros-dark.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": [
+        "*://*/",
+        "*://*/index.html*",
+        "*://*/webfig*",
+        "*://*/webfig/*",
+        "*://*/webfig/index.html*"
+    ]
+}
