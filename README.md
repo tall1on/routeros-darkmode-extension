@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-7.20.0-blue)
+[![Version](https://img.shields.io/badge/version-7.20.0-blue)](https://github.com/tall1on/routeros-darkmode-extension/releases/tag/v7.20.0)
 ![Early Access](https://img.shields.io/badge/status-early%20access-orange)
 ![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-coming%20soon-yellow)
 ![RouterOS](https://img.shields.io/badge/RouterOS-7.20-green)
