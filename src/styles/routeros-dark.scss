@@ -1,0 +1,54 @@
+body.mikrotik-ros {
+    --bg-light: #141414 !important;
+    --bg-medium: #222427 !important;
+    --bg-bright: #2f3439 !important;
+    --white: #2f3439 !important;
+    --dark-green : white;
+
+    --body-color: white;
+    color: var(--body-color);
+
+    .icon {
+        filter: hue-rotate(45deg) !important;
+    }
+
+    .menu ul.level-1 a:has(+ul)::after, .menu ul.level-1 button:has(+ul)::after {
+        filter: hue-rotate(45deg) !important;
+    }
+
+    .table.comment-std th.comment button.switch {
+        filter: hue-rotate(45deg) !important;
+    }
+
+    .table {
+        tbody {
+            background-color: var(--bg-bright) !important;
+        }
+    }
+
+    .tabs .btn.tabs-active, .tabs .btn-select-drop button.tabs-active, .btn-select-drop .tabs button.tabs-active, .tabs .btn-select-drop a.tabs-active, .btn-select-drop .tabs a.tabs-active {
+        background-color: var(--bg-bright) !important;
+        color: white;
+    }
+
+    .tabs .btn, .tabs .btn-select-drop button, .btn-select-drop .tabs button, .tabs .btn-select-drop a, .btn-select-drop .tabs a {
+        background-color: var(--bg-light) !important;
+        color: white;
+    }
+
+    input[type="text"], input[type="password"], input[type="search"], textarea, .combobox button {
+        color: white;
+    }
+
+    a[href="#System:Reboot.Reboot"] {
+        background-color: #ff4d4f; /* red background */
+        color: white;               /* text color */
+        border: 1px solid #ff4d4f; /* optional border to match */
+    }
+
+    button[id="ApplyButton"] {
+        background-color: #ff4d4f; /* red background */
+        color: white;               /* text color */
+        border: 1px solid #ff4d4f; /* optional border to match */
+    }
+}

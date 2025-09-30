@@ -18,11 +18,7 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*/",
-                "*://*/index.html*",
-                "*://*/webfig*",
-                "*://*/webfig/*",
-                "*://*/webfig/index.html*"
+                "*://*/*"
             ],
             "js": [
                 "content/index.js"
@@ -37,10 +33,6 @@
         "storage"
     ],
     "host_permissions": [
-        "*://*/",
-        "*://*/index.html*",
-        "*://*/webfig*",
-        "*://*/webfig/*",
-        "*://*/webfig/index.html*"
+        "*://*/*"
     ]
 }
