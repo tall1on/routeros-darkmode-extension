@@ -6,19 +6,22 @@ body.mikrotik-ros {
     --body-color: white;
     --dark-green : white;
     --green: white;
+    --corner: 0;
+    --corner-sm: 0;
+    --corner-md: 0;
 
     color: var(--body-color);
 
     .icon {
-        filter: hue-rotate(45deg) !important;
+        filter: invert(35%) sepia(90%) saturate(5000%) hue-rotate(190deg) !important;
     }
 
     .menu ul.level-1 a:has(+ul)::after, .menu ul.level-1 button:has(+ul)::after {
-        filter: hue-rotate(45deg) !important;
+        filter: invert(35%) sepia(90%) saturate(5000%) hue-rotate(190deg) !important;
     }
 
     .table.comment-std th.comment button.switch {
-        filter: hue-rotate(45deg) !important;
+        filter: invert(35%) sepia(90%) saturate(5000%) hue-rotate(190deg) !important;
     }
 
     .table {
@@ -38,6 +41,25 @@ body.mikrotik-ros {
     }
 
     input[type="text"], input[type="password"], input[type="search"], textarea, .combobox button, select {
+        border: 1px solid #cfcfcf;
+        color: white;
+    }
+
+    .table input[type="checkbox"] {
+        background-color: transparent;
+        border: 1px solid #cfcfcf;
+
+        &:focus {
+            outline: none;
+            outline-offset: 0;
+        }
+    }
+
+    .bg-green {
+        background-color: transparent !important;
+    }
+
+    .acc .acc-title>button {
         color: white;
     }
 
@@ -53,8 +75,14 @@ body.mikrotik-ros {
         border: 1px solid #ff4d4f; /* optional border to match */
     }
 
+    button[id="CloseButton"] {
+        color: var(--white);
+        background-color: var(--dark-green);
+        border-color: var(--dark-green);
+    }
+
     .modal::backdrop {
-        background-color: rgb(66 120 138 / 50%);
+        background-color: rgb(255 255 255 / 30%);
     }
 
     @keyframes antimate-focusflash {
@@ -65,7 +93,7 @@ body.mikrotik-ros {
             box-shadow: 0 0 0.5rem 0.25rem rgba(0, 123, 255, 0.25); /* semi-transparent blue */
         }
         100% {
-            box-shadow: 0 0 0.5rem 0.25rem rgba(0, 123, 255, 0); /* transparent blue */
+            box-shadow: 0 0 0.5rem 0.25rem rgba(255, 255, 255, 0); /* transparent blue */
         }
     }
 
@@ -81,5 +109,140 @@ body.mikrotik-ros {
     input[type="checkbox"].switch:checked, input[type="checkbox"].switch:checked:focus, input[type="checkbox"].switch:checked:hover, input[type="checkbox"].switch:checked:focus:hover {
         border-color: lightgreen;
         background-color: lightgreen;
+    }
+
+    img[src="mikrotik_logo.svg"] {
+        filter: brightness(0) invert(1);
+    }
+
+    .table .flags {
+        background: var(--bg-medium);
+        color: white;
+    }
+
+    .table th.sort.sort-ascend::after, .table th.sort.sort-descend::after {
+        filter: brightness(0) invert(1);
+    }
+
+    input[type="checkbox"].switch:focus, input[type="checkbox"].switch:focus:hover {
+        outline: none;
+        outline-offset: 0;
+    }
+
+    .btn {
+        &.btn-minus {
+            background-color: #ff4d4f; /* red background */
+            border: 1px solid #ff4d4f; /* optional border to match */
+
+            &::after {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        &.btn-plus {
+            background-color: #078bff; /* red background */
+            border: 1px solid #078bff; /* optional border to match */
+
+            &::after {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        &:focus {
+            outline: none;
+            outline-offset: 0;
+        }
+    }
+
+    .sidenav {
+        border-right: 1px solid #cfcfcf !important;
+    }
+
+    .grid>header {
+        border-bottom: 1px solid #cfcfcf !important;
+    }
+
+    .wndw--tools {
+        border-bottom: 1px solid #cfcfcf !important;
+    }
+
+    .statusbar {
+        color: white;
+    }
+
+    #remove-btn {
+        >.icon-bg.bg-red {
+            background-color: #ff4d4f !important; /* red background */
+
+            >span {
+                filter: brightness(0) invert(1) !important;
+            }
+        }
+
+        &:hover {
+            background: var(--bg-medium);
+        }
+    }
+
+    #disable-btn {
+        >.icon-bg.bg-dark {
+            background-color: transparent !important; /* red background */
+        }
+
+        &:hover {
+            background: var(--bg-medium);
+        }
+    }
+
+    #enable-btn {
+        &:hover {
+            background: var(--bg-medium);
+        }
+    }
+
+    #new-button {
+        >.select-wrap {
+            &:hover {
+                background: var(--bg-medium);
+            }
+        }
+    }
+
+    .acc-title::before {
+        filter: brightness(0) invert(1) !important;
+    }
+
+    .combobox button {
+        background-color: transparent;
+        border: none;
+        filter: brightness(0) invert(1) !important;
+    }
+
+    .f-item>label .error, .f-item>legend .error {
+        color: #ff4d4f;
+    }
+
+    input[type="radio"]:checked {
+        background-color: #078bff;
+        border-color: #078bff;
+    }
+
+    input[type="radio"]:checked::after {
+        background-color: white;
+    }
+
+    .graph {
+        .grid-line {
+            stroke: white;
+        }
+
+        text {
+            fill: white;
+        }
+    }
+
+    .focus-flash:focus, .focus-flash:focus-within {
+        animation-name: none !important;
+        box-shadow: none !important;
     }
 }
