@@ -30,9 +30,6 @@
             "run_at": "document_idle"
         }
     ],
-    "permissions": [
-        "storage"
-    ],
     "host_permissions": [
         "*://*/*"
     ]
