@@ -10,7 +10,8 @@
         "128": "assets/icons/icon128.png"
     },
     "action": {
-        "default_title": "RouterOS Dark Mode"
+        "default_title": "RouterOS Dark Mode",
+        "default_icon": "assets/icons/logo_dark.png"
     },
     "background": {
         "service_worker": "background/serviceWorker.js"
