@@ -48,6 +48,7 @@ body.mikrotik-ros {
     .table input[type="checkbox"] {
         background-color: transparent;
         border: 1px solid #cfcfcf;
+        border-radius: .25rem;
 
         &:focus {
             outline: none;
@@ -131,6 +132,7 @@ body.mikrotik-ros {
 
     .btn {
         &.btn-minus {
+            border-radius: .25rem;
             background-color: #ff4d4f; /* red background */
             border: 1px solid #ff4d4f; /* optional border to match */
 
@@ -140,6 +142,7 @@ body.mikrotik-ros {
         }
 
         &.btn-plus {
+            border-radius: .25rem;
             background-color: #078bff; /* red background */
             border: 1px solid #078bff; /* optional border to match */
 
@@ -244,5 +247,41 @@ body.mikrotik-ros {
     .focus-flash:focus, .focus-flash:focus-within {
         animation-name: none !important;
         box-shadow: none !important;
+    }
+
+    .login {
+        .dock {
+            display: none;
+        }
+
+        .credits {
+            margin-top: 15px;
+
+            a {
+                transition: color 0.2s ease-in-out;
+            }
+
+            &:hover a {
+                color: #078bff !important;
+            }
+        }
+
+        .form>* {
+            align-items: start;
+            flex-direction: column;
+        }
+
+        .form label {
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        .form input[type="text"], .form input[type="password"] {
+            width: 100% !important;
+        }
+    }
+
+    select {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' data-name='Layer 1' viewBox='0 0 12 12'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M10 4 6 8 2 4' data-name='Path 717'/%3e%3c/svg%3e");
     }
 }
