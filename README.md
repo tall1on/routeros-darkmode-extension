@@ -4,7 +4,7 @@
 ![GitHub all releases](https://img.shields.io/github/downloads/tall1on/routeros-darkmode-extension/total.svg)
 # Mikrotik RouterOS Dark Mode Extension
 
-![Screenshot](./github/screenshot-7.20.1.png)
+![Screenshot](./github/screenshot-7.20.3.png)
 
 Chrome extension that applies a dark theme to the MikroTik RouterOS (WebFig) web interface.
 
