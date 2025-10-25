@@ -1,7 +1,7 @@
 [![Version](https://img.shields.io/badge/version-7.20.3-blue)](https://github.com/tall1on/routeros-darkmode-extension/releases/tag/v7.20.2)
-![GitHub all releases](https://img.shields.io/github/downloads/tall1on/routeros-darkmode-extension/total.svg)
+![RouterOS](https://img.shields.io/badge/RouterOS-7.20.2-blue)
 [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-released-green)](https://chromewebstore.google.com/detail/routeros-dark-mode/oialmnigabiamlbdlmhgnnoaigcpngoi)
-![RouterOS](https://img.shields.io/badge/RouterOS-7.20.2-green)
+![GitHub all releases](https://img.shields.io/github/downloads/tall1on/routeros-darkmode-extension/total.svg)
 # Mikrotik RouterOS Dark Mode Extension
 
 ![Screenshot](./github/screenshot-7.20.1.png)
