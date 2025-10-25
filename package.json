@@ -1,6 +1,6 @@
 {
     "name": "routeros-darkmode-extension",
-    "version": "7.20.2",
+    "version": "7.20.3",
     "description": "Chrome extension that applies a dark theme to Mikrotik RouterOS web interface pages.",
     "private": true,
     "type": "module",

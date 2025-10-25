@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "RouterOS Dark Mode",
     "description": "Applies a dark theme to the Mikrotik RouterOS web interface.",
-    "version": "7.20.2",
+    "version": "7.20.3",
     "icons": {
         "16": "assets/icons/icon16.png",
         "32": "assets/icons/icon32.png",
