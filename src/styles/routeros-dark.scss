@@ -3,13 +3,40 @@ body.mikrotik-ros {
     --bg-medium: #222427 !important;
     --bg-bright: #2f3439 !important;
     --white: #2f3439 !important;
+    --bg-whitesmoke: #1a1c1f !important;
+    --neutral-50: #0f1012 !important;
+    --neutral-100: #141414 !important;
+    --neutral-200: #222427 !important;
+    --neutral-300: #2f3439 !important;
+    --neutral-400: #46535c !important;
+    --neutral-500: #6b7680 !important;
+    --neutral-600: #9ca6af !important;
+    --neutral-700: #c3c9ce !important;
+    --neutral-800: #e5e8eb !important;
+    --neutral-900: #f3f5f6 !important;
+    --neutral-950: #ffffff !important;
+    --body: #e5e8eb !important;
+    --body-pale: #9ca6af !important;
+    --body-fade: #6b7680 !important;
     --body-color: white;
     --dark-green : white;
-    --green: white;
+    --green: #00a86b !important;
+    --light-green: color-mix(in srgb, var(--green) 18%, var(--bg-light) 82%) !important;
+    --green-100: color-mix(in srgb, var(--green) 18%, var(--bg-light) 82%) !important;
+    --green-200: color-mix(in srgb, var(--green) 28%, var(--bg-light) 72%) !important;
+    --primary-dark-100: color-mix(in srgb, var(--primary-dark) 25%, var(--bg-light) 75%) !important;
+    --primary-dark-200: color-mix(in srgb, var(--primary-dark) 40%, var(--bg-light) 60%) !important;
+    --red-100: color-mix(in srgb, var(--red) 25%, var(--bg-light) 75%) !important;
+    --red-200: color-mix(in srgb, var(--red) 35%, var(--bg-light) 65%) !important;
+    --orange-100: color-mix(in srgb, var(--orange) 25%, var(--bg-light) 75%) !important;
+    --orange-200: color-mix(in srgb, var(--orange) 35%, var(--bg-light) 65%) !important;
+    --red-error-bg: #2a1517 !important;
+    --red-error-bg-hover: #351a1d !important;
     --corner: 0;
     --corner-sm: 0;
     --corner-md: 0;
 
+    background-color: var(--bg-light) !important;
     color: var(--body-color);
 
     .icon {
@@ -61,6 +88,7 @@ body.mikrotik-ros {
     }
 
     .acc .acc-title>button {
+        background-color: var(--bg-medium) !important;
         color: white;
     }
 
@@ -77,13 +105,45 @@ body.mikrotik-ros {
     }
 
     button[id="CloseButton"] {
-        color: var(--white);
-        background-color: var(--dark-green);
-        border-color: var(--dark-green);
+        color: white;
+        background-color: #b3261e;
+        border-color: #b3261e;
+    }
+
+    .form--statusbar span {
+        background-color: #167d54 !important;
+        color: white !important;
+    }
+
+    .form--statusbar span.disabled {
+        background-color: var(--bg-medium) !important;
+        color: var(--body-pale) !important;
+    }
+
+    .infoMessage {
+        color: #7ee2b8 !important;
+    }
+
+    .errorMessage {
+        color: #ff6b6b !important;
+    }
+
+    .btn-red, .btn-green, .btn-primary-dark, .btn-primary-light,
+    .btn-dark-green, .btn-darken-15 {
+        color: white !important;
+    }
+
+    .btn-light-green, .btn-primary-dark-rev {
+        color: #8fd6ff !important;
+    }
+
+    .modal {
+        background-color: var(--white) !important;
+        color: var(--body-color);
     }
 
     .modal::backdrop {
-        background-color: rgb(255 255 255 / 30%);
+        background-color: rgb(0 0 0 / 60%);
     }
 
     @keyframes antimate-focusflash {
@@ -211,7 +271,7 @@ body.mikrotik-ros {
         }
     }
 
-    .acc-title::before {
+    .acc-title::after {
         filter: brightness(0) invert(1) !important;
     }
 

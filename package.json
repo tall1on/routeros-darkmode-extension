@@ -1,31 +1,25 @@
 {
     "name": "routeros-darkmode-extension",
-    "version": "7.20.3",
+    "version": "7.25.2",
     "description": "Chrome extension that applies a dark theme to Mikrotik RouterOS web interface pages.",
     "private": true,
     "type": "module",
     "scripts": {
-        "clean": "rimraf dist .rollup.cache",
-        "build": "npm run clean && rollup -c",
-        "watch": "npm run clean && rollup -c -w"
-    },
-    "dependencies": {
-        "tslib": "^2.6.2"
+        "clean": "rimraf dist",
+        "typecheck": "tsc --noEmit",
+        "build": "npm run typecheck && npm run clean && vite build && vite build --config vite.background.config.ts",
+        "watch": "npm run clean && concurrently -k -n content,background -c blue,green \"vite build --watch\" \"vite build --config vite.background.config.ts --watch\""
     },
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^25.0.7",
-        "@rollup/plugin-node-resolve": "^15.2.3",
-        "@types/chrome": "^0.0.241",
-        "@types/node": "^20.14.9",
-        "autoprefixer": "^10.4.17",
-        "esbuild": "^0.25.11",
-        "postcss": "^8.4.35",
-        "rimraf": "^5.0.5",
-        "rollup": "^4.21.1",
-        "rollup-plugin-copy": "^3.5.0",
-        "rollup-plugin-esbuild": "^6.2.0",
-        "rollup-plugin-postcss": "^4.0.2",
-        "sass": "^1.93.2",
-        "typescript": "^5.9.3"
+        "@types/chrome": "^0.3.8",
+        "@types/node": "^26.6.11",
+        "concurrently": "^10.0.7",
+        "rimraf": "^6.1.4",
+        "sass": "^1.108.2",
+        "typescript": "npm:typescript-native-bridge@6.0.3-bridge.19.tsgo.7.0.2",
+        "vite": "^8.4.0"
+    },
+    "overrides": {
+        "typescript": "$typescript"
     }
 }
